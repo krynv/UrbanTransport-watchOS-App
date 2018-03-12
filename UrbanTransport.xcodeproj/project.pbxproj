@@ -19,6 +19,8 @@
 		549579702056E265003099E1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495796F2056E265003099E1 /* InterfaceController.swift */; };
 		549579722056E265003099E1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549579712056E265003099E1 /* ExtensionDelegate.swift */; };
 		549579742056E266003099E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549579732056E266003099E1 /* Assets.xcassets */; };
+		549579842056E33F003099E1 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549579832056E33F003099E1 /* RowController.swift */; };
+		549579862056E5AF003099E1 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549579852056E5AF003099E1 /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		549579712056E265003099E1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		549579732056E266003099E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		549579752056E266003099E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		549579832056E33F003099E1 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		549579852056E5AF003099E1 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				549579712056E265003099E1 /* ExtensionDelegate.swift */,
 				549579732056E266003099E1 /* Assets.xcassets */,
 				549579752056E266003099E1 /* Info.plist */,
+				549579832056E33F003099E1 /* RowController.swift */,
+				549579852056E5AF003099E1 /* DetailInterfaceController.swift */,
 			);
 			path = "UrbanTransport WatchKit Extension";
 			sourceTree = "<group>";
@@ -295,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549579842056E33F003099E1 /* RowController.swift in Sources */,
 				549579722056E265003099E1 /* ExtensionDelegate.swift in Sources */,
+				549579862056E5AF003099E1 /* DetailInterfaceController.swift in Sources */,
 				549579702056E265003099E1 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

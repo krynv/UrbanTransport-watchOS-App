@@ -1,15 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14092" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14028.1"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="UrbanTransport_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="Hpz-9h-Snw">
+                            <items>
+                                <tableRow identifier="RowController" id="Wsd-zB-2nu" customClass="RowController" customModule="UrbanTransport_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="q3Q-kM-hy0">
+                                        <items>
+                                            <label width="136" height="53" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="0NB-rA-qjH"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="0NB-rA-qjH" id="Dwx-lp-z52"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="Hpz-9h-Snw" id="xp4-wY-a0G"/>
+                    </connections>
+                </controller>
             </objects>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="NgC-hj-Ak8">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="Ldi-DE-gBK" customClass="DetailInterfaceController" customModule="UrbanTransport_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="275" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="5" id="FN7-7Q-9WE"/>
+                    </items>
+                    <connections>
+                        <outlet property="detailLabel" destination="FN7-7Q-9WE" id="rvK-u2-oCM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="281" y="288"/>
         </scene>
     </scenes>
 </document>
